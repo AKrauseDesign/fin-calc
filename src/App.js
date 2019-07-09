@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.scss';
-import Welcome from './components/Welcome';
-import AmortizationLoans from "./components/AmortizationLoans";
+import AmortizationLoanCalculator from "./components/AmortizationLoanCalculator";
 
 function App() {
   return (
     <div>
-      <Welcome name='Andrew' />
-      <AmortizationLoans title="John" />
+      <AmortizationLoanCalculator title="Amortization Calculator" interest_rate={6} num_years={15} principal={10000} />
     </div>
   );
 }
