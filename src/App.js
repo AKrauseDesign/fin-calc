@@ -13,17 +13,16 @@ import './App.scss';
 import AmortizationLoanCalculator from "./components/AmortizationLoanCalculator";
 
 // forms 
-import BasicForm from './layouts/forms/BasicForm';
+import CalcForm from './layouts/forms/CalcForm';
 
 
 function App() {
   
   return (
     <Container maxWidth="sm">
-        <Grid container spacing={3}>
-          <AmortizationLoanCalculator title="Amortization Calculator" interest_rate={6} num_years={15} principal={10000} />
-          <BasicForm></BasicForm>
-        </Grid>
+      <CalcForm></CalcForm>
+      <AmortizationLoanCalculator title="Amortization Calculator" interest_rate={6} num_years={15} principal={10000} />
+
     </Container>
   );
 }
