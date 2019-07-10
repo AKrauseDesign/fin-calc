@@ -11,10 +11,12 @@ class CalcForm extends React.Component {
     super(props);
     this.state = {
       isGoing: true,
-      numberOfGuests: 2
+      numberOfGuests: 2, 
+      email: ""
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.emailChange = this.emailChange.bind(this); 
   }
 
   handleInputChange(event) {
